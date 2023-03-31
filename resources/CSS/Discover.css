@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* hero section */
+ .hero-conatiner.text-center{
+    display: block;
+    position: relative;
+    top: 100px;
+}
+
+
+/* Explore style start */
+ .start-Explore {
+    display: block;
+    position: relative;
+    top: auto;
+    /* right: 200px;
+    left: 200px; */
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    
+}
+
+.start-Explore > .Explore-div {
+    width: 600px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+.start-Explore >.Explore-div > h2 {
+    font-size: 32px;
+    font-family: 'Integralcf',Arial,sans-serif;
+}
+
+/* footer part styling start */
+.footer-grid {
+    background-color: lightgray;
+    /* position:absolute;
+    bottom: 0px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+/* main grid container of row-1 of footer */
+.footer-grid > .row-1.container> .col4 >.footer-heading >p{
+    font-family: 'Integralcf',Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+}
+.footer-grid > .row-1{
+    display: grid;
+    
+    width:1000px;
+    grid-template-columns: 25% 25% 25% 25%;
+    
+
+}
+.footer-grid > .row-1 > .col4 > ul li{
+    list-style-type: none;
+    /* text-decoration: none; */
+    color: black;
+}
+.footer-grid > .row-1 > .col4 > ul li a:hover{
+    color: #0b2e2e;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+/* footer navigation row 2 styling */
+ 
+ .footer-grid > .row-2 > nav{
+    
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 40px 10% 0 10%;
+}
+
+.footer-grid > .row-2 > nav > p > span{
+    color: #0b2e2e;
+}
+
+.footer-grid > .row-2 > nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 20px 30px;
+}
+.footer-grid > .row-2 > nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-grid > .row-2 > nav ul li a:hover{
+    color: #0b2e2e;
+    font-size: 20px;
+    font-weight: 700;
+} 

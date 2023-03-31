@@ -1,0 +1,250 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rout</title>
+	<link rel="icon" type="image/x-icon" href="resources/images/rout-logo.ico">
+	<!-- CSS and JavaScript references -->
+	<link rel="stylesheet" type="text/css" href="/resources/CSS/header.css">
+	<link rel="stylesheet" type="text/css" href="/resources/CSS/message.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="/resources/javascript/header.js"></script>
+	<script src="/resources/javascript/message.js"></script>
+	<!-- Ending of CSS and JavaScrit -->
+</head>
+<body onload="loadcontact()">
+	<!-- Header section -->
+	<div class="headerfixed">
+		<!-- Header start -->
+	<div class="header">
+		<!-- Wrapper start of heading-->
+		<div class="wrapper">
+			<!-- rout logo -->
+			<a href="home.html"><img src="/resources/images/rout-logo.png" width=45 height=45 class="logoletter" alt=""/></a>
+			<!-- Search bar -->
+			<form id="searching">
+			  <input type="text" name="search" placeholder="Search.." id="search">
+			</form>
+
+			<!-- icon bar to navigate to all pages -->
+			<div class="icon-bar">
+			 <ul>
+			 	<!-- home -->
+			 	<li><a href="home.html" onmouseover="headerchange(1);" onmouseout="headerorigin(1);"><img src="/resources/images/home.png" id="rout-home" alt=""><p id="p1">Home</p></a></li>
+			 	<!-- profile -->
+			 	<li> <a href="profile.html" onmouseover="headerchange(2);" onmouseout="headerorigin(2);"><img src="/resources/images/profile.png" id="rout-profile" alt=""><p id="p2">Profile</p></a> </li>
+			 	<!-- connections -->
+			 	<li><a href="connections.html" onmouseover="headerchange(3);" onmouseout="headerorigin(3);"><img src="/resources/images/connections.png" id="rout-connections" alt=""><p id="p3">connections</p></a></li>
+			 	<!-- message -->
+			 	<li style="border-bottom: 6px solid white;"> <a href="messages.html" onmouseover="headerchange(4);" onmouseout="headerorigin(4);"><img src="/resources/images/message.png" id="rout-message" alt=""><p id="p4">Messages</p></a></li>
+			 	<!-- notification -->
+			 	<li><a href="#" onmouseover="headerchange(5);" onmouseout="headerorigin(5);"><img src="/resources/images/notification.png" id="rout-notification" alt=""><p id="p5">Notifications</p></a>
+			 	<div id="notify">
+			 		<p>No New Notification</p>
+			 		<hr style="background-color:white;width: 90%;">
+			 	</div>
+			 	</li>
+			 </ul>	 
+			   
+			</div>
+			<!-- Ending of Icon bar -->
+
+
+		</div>
+		<!-- Wrapper End of heading -->
+
+	</div>
+	<!-- End of header -->
+	</div>
+	<!-- End of header section -->
+
+
+	<!-- Content Section -->
+	<div class="content">
+		<!-- Start wrapper -->
+		<div class="wrapper">
+
+			<!-- Start Left section -->
+			<div class="leftfixed">
+				<!-- start sidebar left -->
+				<div class="sidebarleft">
+					<img src="/resources/images/krishna_pro_pic.png" alt=""/>
+					<p id="sidename"> Krishna Mallika Cheerala</p>
+					<p id="ssn"> Swarna Bharathi Institute of Science and Techonology</p>
+					<p id="country">India</p>
+					<a href="profile.html" id="viewall">View All</a>
+					<hr>
+					<p id="noconnections">31</p>
+					<p id="connectionsname"><a href="connections.html">connections</a></p>
+					<p id="logout"><a href="../index.html">Log Out</a></p>
+				</div>
+				<!-- End of sidebar left -->
+			</div>
+			<!-- End of leftfixed -->
+
+
+			<!-- start of main content section -->
+			<div class="mainnotfixed">
+				<!-- Start of left contact section -->
+				<div class="contact">	
+				<!-- heading messaging -->
+				<div class="headmsg">
+					<p>Messaging</p>
+				</div>
+
+				<!-- contact section content -->
+				<div class="leftcontent">
+					<!-- Search bar -->
+					<form id="contactsearch">
+					  <input type="text" name="search" placeholder="Search.." id="searchcontact">
+					</form>
+
+					<!-- Contacts -->
+					<div class="contacts">
+						<!-- users -->
+						<div class="contactuser" style="border-left: 8px solid gray; margin-top: 18px;" onclick="select(1)">
+							<img src="/resources/images/dennis.png" class="contimg" alt="">
+							<p class="name">Rishitha C</p>
+						</div>
+
+						<div class="contactuser" onclick="select(2);">
+							<img src="/resources/images/other_profile.png" class="contimg" alt=""/>
+							<p class="name">Manaswini N</p>
+						</div>
+						<!-- End user -->
+
+					</div>
+					<!-- End contacts -->
+
+				</div>
+				<!-- End contact section -->				  
+			    </div>
+				<!-- End of left contact section -->
+				
+
+				<!-- Start of right chat section -->
+				<div class="chat">
+				<!-- heading chat user -->
+				<div class="chatuser">
+					<!-- heading chat user name and pic -->
+					<img src="/resources/images/dennis.png" class="chatimg" alt=""/>
+							<p class="viewname">Rishitha C</p>
+				</div>
+				<!-- End of chat user heading -->
+
+				<!-- chat msg start -->
+				<div class="chatmsg">
+					
+					<div class="received">
+						<p>Hello</p>
+					</div>
+
+					<div class="send">
+						<p>Hi!</p>
+					</div>
+
+					<div class="received">
+						<p>How are you?</p>
+					</div>
+
+				</div>
+				<!-- End of chat msg -->
+
+				<!-- to send msg box and button -->
+				<div class="sendmessage">
+					<textarea id="textarea" placeholder="text message"></textarea>
+					<p id="sendsymbol" onclick="sendmsg();"><i class="fa fa-paper-plane" aria-hidden="true" ></i></p>
+				</div>
+				<!-- end of msg box -->
+
+				</div>
+				<!-- End of right chat section -->
+		
+			</div>
+			<!-- End of main content section -->
+
+
+			<!-- start of right section suggestion user -->
+			<div class="rightfixed">
+				<div class="suggesfixed"><p id="suggestion">Suggestion</p></div>
+
+				<!-- Start of right fixed -->
+				<div class="sidebarright">
+
+					<!-- suggested user -->
+					<div class="rightcontent">
+						<img src="/resources/images/other_profile.png" alt=""/>
+						<p class="name">Rishitha C</p>
+						<a href="#" id="connect1" onclick="changelogo('connect1');">&#x271A; Connect</a>
+
+					</div>
+
+					<div class="rightcontent">
+						<img src="/resources/images/other_profile.png" alt=""/>
+						<p class="name">Manaswini N </p>
+						<a href="#" id="connect2" onclick="changelogo('connect2');">&#x271A; Connect</a>
+					</div>
+
+					<div class="rightcontent">
+						<img src="/resources/images/other_profile.png" alt=""/>
+						<p class="name">Usharani D</p>
+						<a href="#" id="connect3" onclick="changelogo('connect3');">&#x271A; Connect</a>
+					</div>
+
+					<div class="rightcontent">
+						<img src="/resources/images/other_profile.png" alt=""/>
+						<p class="name">Navateja R</p>
+						<a href="#" id="connect4" onclick="changelogo('connect4');">&#x271A; Connect</a>
+					</div>
+
+					<div class="rightcontent">
+						<img src="/resources/images/other_profile.png" alt=""/>
+						<p class="name">Karthik D</p>
+						<a href="#" id="connect5" onclick="changelogo('connect5');">&#x271A; Connect</a>
+					</div>
+					<!-- End of sugested user -->
+				</div>
+				<!-- End of right fixed -->
+
+			</div>
+			<!-- End of right section suggestion user -->
+
+
+			<!-- Start of about rout -->
+			<div class="rightfixed">
+				
+				<div class="sidebarright" style="width: 280px;padding: 4px;margin-top: 20px;height: 150px;">
+					<hr style="top: -25px;">
+				<div class="foot">
+
+					<ul>
+						<li><a href="">About</a></li>
+						<li><a href="">Contact</a></li>
+						<li><a href="">Privacy and Policy</a></li>
+						<li><a href="">Help</a></li>
+					</ul>
+					<img src="/resources/images/rout-logo.png" alt=""/>
+					<p>Copyright © www.rout.com 2023 All Rights Reserved.</p>
+				</div>
+				</div>
+			</div>
+			<!-- End of about rout -->
+
+			<!-- message bar at the bottom -->
+			<div class="message" id="msg1">
+				<button id="msg2" onclick="showhide()">Messaging</button>
+				<p> No New Messages.</p>
+			</div>
+			<!-- End of message bar at the bottom -->
+
+		</div>
+		<!-- End of wrapper -->
+
+	</div>
+	<!-- End of content section -->
+
+
+</body>
+</html>

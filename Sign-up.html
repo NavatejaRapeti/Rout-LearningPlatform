@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/CSS/signup-style.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> -->
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="signup-brand">
+            <h4><a href=""> Rout</a></h4>
+        </div>
+    </header>
+    <main>
+        <div class="signup-form-container">
+            <h3>Sign up</h3>
+            <form action="">
+                <div class="signup-firstname">
+                    <label for="firstname">First Name</label><br>
+                    <input type="firstname" placeholder="Enter your firstname" name="firstname" id="firstname" required
+                        autocomplete="firstname">
+                </div>
+                <div class="signup-middlename">
+                    <label for="middlename">Middle Name</label><br>
+                    <input type="middlename" placeholder="Enter your middlename" name="middlename" id="middlename"
+                        required autocomplete="middlename">
+                </div>
+                <div class="signup-lastname">
+                    <label for="lastname">Last Name</label><br>
+                    <input type="lastname" placeholder="Enter your lastname" name="lastname" id="lastname" required
+                        autocomplete="lastname">
+                </div>
+                <div class="signup-gender">
+                    <label for="gender">Gender</label>
+                    <div>
+                        <label for="male">Male</label>
+                        <input type="radio">
+                        <label for="female">Female</label>
+                        <input type="radio">
+                        <label for="others">Others</label>
+                        <input type="radio">
+                    </div>
+                </div>
+                <div class="signup-dob">
+                    <label for="dob">DOB</label><br>
+                    <input type="date">
+                </div>
+                <div class="signup-email">
+                    <label for="email">Email</label><br>
+                    <input type="email" placeholder="Enter your Email" name="email" id="email" required
+                        autocomplete="email">
+                </div>
+                <div class="signup-password">
+                    <label for="password">Password</label><br>
+                    <input type="password" placeholder="Enter your password" name="password" id="passwordInput" required autocomplete="current-password">
+                    
+                        <input type="checkbox" name="remember_me" id="remember_me"   onclick="showPasswordFunction()">
+                        <label for="remember_me">Show Password</label>
+                </div>
+                <div class="signup-confirm_password">
+                    <label for="confirm_password">Confirm Password</label><br>
+                    <input type="password" placeholder="Confirm your password" name="password" id="passwordConfirmInput" required autocomplete="current-password">
+                    <input type="checkbox" onclick="showConfirmPasswordFunction()">
+                    <label for="remember_me">Show Password</label>
+                </div>
+                
+                <div class="signup-button">
+                    <input type="submit" name="commit" value="Sign up" data-testid="signup-button"
+                        data-disable-with="Sign up">
+                </div>
+            </form>
+            <hr class="col-12-xs m-v-3-xs" text="OR">
+            <div class="alt-login">
+                <form action="">
+                    <button class="alt-btn" name="button" type="submit" value="Login with Google"><img src="resources/images/google-round-icon.svg" alt=""> Login with Google</button><br>
+                    <button class="alt-btn" name="button" type="submit" value="Login with Facebook"><img src="resources/images/facebook-round-icon.svg" alt=""> Login with Facebook</button>
+                </form>
+            </div>
+            <div class="signup-login">
+                <p>Already have an Account ? <a href="Log-in.html">Log In</a></p>
+
+            </div>
+        </div>
+    </main>
+    <footer> © Rout 2023</footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
