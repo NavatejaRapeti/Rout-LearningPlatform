@@ -4,27 +4,27 @@ function headerchange(check)
 	if(check==1)
 	{
 		var text=document.getElementById('p1').style.color="white";
-		var img=document.getElementById('rout-home').src="../resources/images/home-hover.png";
+		var img=document.getElementById('rout-home').src="./resources/images/home-hover.png";
 	}
 	else if(check==2)
 	{
 		var text=document.getElementById('p2').style.color="white";
-		var img=document.getElementById('rout-profile').src="../resources/images/profile-hover.png";
+		var img=document.getElementById('rout-profile').src="./resources/images/profile-hover.png";
 	}
 	else if(check==3)
 	{
 		var text=document.getElementById('p3').style.color="white";
-		var img=document.getElementById('rout-connections').src="../resources/images/connections-hover.png";
+		var img=document.getElementById('rout-connections').src="./resources/images/connections-hover.png";
 	}
 	else if(check==4)
 	{
 		var text=document.getElementById('p4').style.color="white";
-		var img=document.getElementById('rout-message').src="../resources/images/message-hover.png";
+		var img=document.getElementById('rout-message').src="./resources/images/message-hover.png";
 	}
 	else if(check==5)
 	{
 		var text=document.getElementById('p5').style.color="white";
-		var img=document.getElementById('rout-notification').src="../resources/images/notification-hover.png";
+		var img=document.getElementById('rout-notification').src="./resources/images/notification-hover.png";
 	}
 }
 
@@ -35,27 +35,27 @@ function headerorigin(check)
 	if(check==1)
 	{
 		var text=document.getElementById('p1').style.color="black";
-		var img=document.getElementById('rout-home').src="../resources/images/home.png";
+		var img=document.getElementById('rout-home').src="./resources/images/home.png";
 	}
 	else if(check==2)
 	{
 		var text=document.getElementById('p2').style.color="black";
-		var img=document.getElementById('rout-profile').src="../resources/images/profile.png";
+		var img=document.getElementById('rout-profile').src="./resources/images/profile.png";
 	}
 	else if(check==3)
 	{
 		var text=document.getElementById('p3').style.color="black";
-		var img=document.getElementById('rout-connections').src="../resources/images/connections.png";
+		var img=document.getElementById('rout-connections').src="./resources/images/connections.png";
 	}
 	else if(check==4)
 	{
 		var text=document.getElementById('p4').style.color="black";
-		var img=document.getElementById('rout-message').src="../resources/images/message.png";
+		var img=document.getElementById('rout-message').src="./resources/images/message.png";
 	}
 	else if(check==5)
 	{
 		var text=document.getElementById('p5').style.color="black";
-		var img=document.getElementById('rout-notification').src="../resources/images/notification.png";
+		var img=document.getElementById('rout-notification').src="./resources/images/notification.png";
 	}
 }
 
