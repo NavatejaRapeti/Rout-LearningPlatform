@@ -172,7 +172,7 @@ function mypost()
 	var div1=document.createElement("DIV");
 	div1.className="userimg";
 	var img=document.createElement("img");
-	img.src= "./resources/images/krishna_pro_pic.png";
+	img.src= "../resources/images/krishna_pro_pic.png";
 	div1.appendChild(img);
 	div.appendChild(div1);
 
