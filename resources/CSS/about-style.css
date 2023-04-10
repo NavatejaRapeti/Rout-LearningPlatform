@@ -242,7 +242,7 @@ padding: 0px 10px;
 
 }
 .about-us > .us-container > .abt-us.krishna {
-background-image: url(/resources/images/krishna_pro_pic.png);
+background-image: url(./resources/images/krishna_pro_pic.png);
 border-radius: 50%;
 background-size: cover;
 background-repeat: no-repeat;
@@ -253,7 +253,7 @@ padding: 0px 10px;
 
 }
 .about-us > .us-container > .abt-us.rishitha {
-background-image: url(/resources/images/Rishi-pro.jpg);
+background-image: url(./resources/images/Rishi-pro.jpg);
 border-radius: 50%;
 background-size: cover;
 background-repeat: no-repeat;
@@ -264,7 +264,7 @@ padding: 0px 10px;
 
 }
 .about-us > .us-container > .abt-us.karthik {
-background-image: url(/resources/images/karthik_pro_pic.png);
+background-image: url(./resources/images/karthik_pro_pic.png);
 border-radius: 50%;
 background-size: cover;
 background-repeat: no-repeat;
